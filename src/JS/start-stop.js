@@ -1,4 +1,5 @@
 import colors from './colors';
+import {randomIntegerFromInterval} from './random-generator.js';
 
 const body = document.querySelector('body');
 
@@ -20,6 +21,3 @@ export function stopBtnClickHandler() {
     changesHasStarted = false;
 }
 
-const randomIntegerFromInterval = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
